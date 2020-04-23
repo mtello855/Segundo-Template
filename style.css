@@ -1,5 +1,5 @@
-body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+﻿body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 /*header*/
 .space {
@@ -23,10 +23,16 @@ a {
   color: #272121;
   background-color: none;
   text-align: center;
-  padding: 15px;
+  padding: 20px;
 }
 .box {
   display: flex;
+}
+.cate{
+  font-size: 13px;
+  text-align: center;
+  margin-top: -20px;
+  font-weight: bold;
 }
 .main {
   font-size: 20px;
@@ -42,6 +48,7 @@ a {
   height: 50px;
   color: white;
   background-color: black;
+  border-radius: 5px 5px 5px 5px;
 }
 #header {
   margin-top: -200px;
@@ -54,15 +61,81 @@ a {
   height: 800px;
   z-index: -1;
 }
-.template {
-  background-image: url("./catedral.jpg");
-  width: 100%;
-  height: 675px;
+#presentation {
+  background-image: url("./cate.png");
+  margin-top: -200px;
+  height: 770px;
+  /*filter: brightness(50%);*/
+}
+.template{
+  padding: 390px;
 }
 .simple {
-  position: absolute;
+ text-align: center;
+ color:  white;
+ font-size: 90px;
 }
 .welcome {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+.joinbtn{
+  background-color: #002e4d;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 5px 5px 5px 5px;
+  padding: 20px 50px 20px 50px;
+  position: relative;
+  margin-top: 46px;
+  margin-left: 428px;
+}
+/*description*/
+.subtitle{
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+}
+.descriptions{
+  justify-content: space-between;
+  text-align: center;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+/*Horaio*/
+#hours{
+  background-color: #002e4d;
+  color: white;
+}
+.vl{
+  border-left: 1px solid white;
+  height: 70px;
   position: absolute;
-  margin-top: 100px;
+  margin-left: 730px;
+  margin-top: 8px;
+}
+.readbtn{
+  border-radius: 5px 5px 5px 5px;
+  background-color: #002e4d;
+  border-color: white;
+  color: white;
+  padding: 20px 50px 20px 50px;
+  margin: 20px 20px 20px 20px;
+}
+.hour{
+  justify-content: space-between;
+  padding: 40px;
+  margin: 40px;
+}
+.day{
+  font-style: italic;
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.wel{
+  font-size: 30px;
+  font-weight: bold;
 }
