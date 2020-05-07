@@ -28,11 +28,20 @@ a {
 .box {
   display: flex;
 }
-.cate{
+.logo{
+  height: 80px;
+  width: 80px;
+  margin-top: 10px;
+}
+.yorkate{
+  margin-top: -15px;
+  display: inline-flex;
+}
+.cate {
   font-size: 13px;
   text-align: center;
-  margin-top: -20px;
   font-weight: bold;
+  margin: 58px -82px 0px
 }
 .main {
   font-size: 20px;
@@ -55,34 +64,37 @@ a {
   padding: 200px;
 }
 /*img principal*/
-.pres {
-  margin-top: -200px;
-  width: 100%;
-  height: 800px;
-  z-index: -1;
-}
 #presentation {
-  background-image: url("./cate.png");
+  position: relative;
+}
+#presentation::before {
+  content: "";
+  position: absolute;
   margin-top: -200px;
   height: 770px;
-  /*filter: brightness(50%);*/
+  top: 0; left: 0;
+  width: 100%;
+  background-image: url("./cate.png");
+  filter: brightness(50%);
 }
-.template{
-  padding: 390px;
+.template {
+  position: absolute;
+  margin: 99px 400px;
 }
+
 .simple {
- text-align: center;
- color:  white;
- font-size: 90px;
+  text-align: center;
+  color: white;
+  font-size: 90px;
 }
 .welcome {
   text-align: center;
   color: white;
   font-size: 50px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-style: italic;
 }
-.joinbtn{
+.joinbtn {
   background-color: #002e4d;
   color: white;
   font-weight: bold;
@@ -94,48 +106,206 @@ a {
   margin-left: 428px;
 }
 /*description*/
-.subtitle{
+.subtitle {
   font-weight: bold;
   text-align: center;
   font-size: 40px;
+  color: #272121;
 }
-.descriptions{
+.descriptions {
   justify-content: space-between;
   text-align: center;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 210px;
+  padding-right: 210px;
+}
+#description{
+  padding-top: 60vh;
+}
+.contentdesc {
+  padding: 0px 45px;
 }
 /*Horaio*/
-#hours{
+#hours {
   background-color: #002e4d;
   color: white;
 }
-.vl{
+.vl {
   border-left: 1px solid white;
   height: 70px;
   position: absolute;
-  margin-left: 730px;
-  margin-top: 8px;
+  margin-left: 603px;
+  margin-top: 31px;
 }
-.readbtn{
+.readbtn {
   border-radius: 5px 5px 5px 5px;
   background-color: #002e4d;
   border-color: white;
   color: white;
   padding: 20px 50px 20px 50px;
-  margin: 20px 20px 20px 20px;
+  margin: 40px 20px 20px 20px;
 }
-.hour{
+.hour {
   justify-content: space-between;
-  padding: 40px;
-  margin: 40px;
+  padding: 20px;
+  margin: 40px 192px 0px;
 }
-.day{
+.day {
   font-style: italic;
-  font-size: 20px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 25px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
-.wel{
+.wel {
   font-size: 30px;
   font-weight: bold;
+}
+/*Information*/
+#info {
+  background-color: #e6e6e6;
+}
+.infodays {
+  background-color: white;
+  padding: 40px 150px 40px 150px
+}
+.countdown {
+  background-color: #002e4d;
+  color: white;
+  font-size: 40px;
+  display: flex;
+}
+.infor {
+  justify-content: space-around;
+  padding: 100px;
+}
+/*OUR EVENTS*/
+.imgevent{
+  width: 450px;
+  height: 330px;
+}
+.event{
+ justify-content: space-between; 
+}
+.morning{
+  margin: 0px 90px 0px 90px;
+}
+h4{
+  color: #00ace6;
+}
+.content{
+  font-family: initial;
+  font-size: large;
+}
+.pilu{
+  color:#999999;
+  font-weight: bold;
+  font-family: auto;
+  font-style: italic; 
+}
+.palo{
+  color: #00ace6;
+  font-weight: bold;
+  font-family: auto;
+  font-style: italic;
+  font-size: 20px;
+}
+/*NEWS*/
+.subsub{
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  font-family: serif;
+  font-style: italic;
+  color: #999999;
+}
+#pray{
+  background-image: url(./0227-108.jpg);
+}
+
+.orar{
+  background: rgba(97, 97, 97, 0.60);
+  height: 700px;
+  text-align: center;
+  color: white;
+  font-size: 80px;
+  padding: 130px 271px
+}
+.comone{
+text-align: left;
+margin-bottom: -150px;
+}
+.comtwo{
+  text-align: right;
+  margin-top: -120px;
+}
+.comone , .comtwo{
+  color: #002e4d;
+  
+}
+.read {
+  border-radius: 5px 5px 5px 5px;
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  padding: 20px 50px 20px 50px;
+  margin: 40px 20px 20px 20px;
+  font-size: 20px;
+}
+/*profile*/
+.profile{
+  justify-content: space-between;
+  text-align: center;
+  padding: 0px 204px;
+}
+.avatar {
+  vertical-align: middle;
+  width: 300px;
+  height: 280px;
+  border-radius: 50%;
+}
+.cargo{
+  color: #002e4d;
+  font-weight: bold;
+}
+/*footer*/
+.hrfoot{
+  padding: 40px;
+}
+#footer{
+  background-color: #262626;
+  color: white;
+}
+a{
+  color: white;
+}
+.foot {
+  justify-content: space-around;
+  padding: 35px 87px;
+}
+.yorkfoot{
+  display: flex;
+}
+.namecate{
+  margin-top: 102px;
+}
+.logofoot{
+  width: 130px;
+  height: 130px;
+  margin-top: 103px;
+}
+.useful{
+  display: inline-flex;
+}
+.two{
+  margin: 82px;
+}
+.credits{
+  background-color: #1a1a1a;
+  text-align: center;
+  padding: 55px 0px 55px 0px
+}
+/*iconos*/
+.fa-map-marker-alt , .fa-phone-alt , .fa-envelope , .fa-globe-americas , .fa-calendar-alt , .fa-location-arrow , .fa-angle-right{
+ font-size:30px;
+ color: #00ace6;
+ margin-right: 25px;
 }
